@@ -3,7 +3,6 @@ import '../../src/assets/css/style.css';
 
 const Table = (props) => {
   const removeBook = (id) => {
-    console.log(id);
     let newBook = props.books.filter((book) => book.id !== id); // remove single book from the list
 
     props.setBook(newBook);
